@@ -1,0 +1,24 @@
+#!/bin/sh
+# PROVIDE: snowflake
+# REQUIRE: NETWORKING SERVERS
+# BEFORE: DAEMON
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+
+name="snwoflake"
+rcvar="snowflake_enable"
+pidfile="/var/run/${name}.pid"
+logfile="/var/log/${name}.log"
+procname="/usr/local/bin/proxy"
+
+
+load_rc_config $name
+
+: ${snowflake_enable="NO"}
+: ${snowflake_flags}
+
+command="/usr/sbin/daemon"
+
+command_args="-p ${pidfile} -u nobody -o ${logfile} -f ${procname}"
+run_rc_command "$1"

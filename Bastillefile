@@ -1,0 +1,7 @@
+PKG git-lite go
+CMD git clone https://git.torproject.org/pluggable-transports/snowflake.git
+CMD cd snowflake/proxy; go build; install -m 755 proxy /usr/local/bin/
+CP rc.d/snowflake /usr/local/etc/rc.d/
+CMD chmod 744 /usr/local/etc/rc.d/snowflake
+SYSRC snowflake_enable="YES"
+SERVICE snowflake start
