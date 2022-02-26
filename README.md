@@ -17,4 +17,4 @@ bastille template TARGET ddowse/snowflake-template
 
 ## Info
 
-Logfile: `/var/log/snowflakelog`
+Logfile: `/var/log/snowflake.log`
