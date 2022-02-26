@@ -1,5 +1,5 @@
 # snowflake-template
-A BastilleBSD template to bootstrap snowflake from the TOR Project
+A [BastilleBSD](https://bastillebsd.org) template to bootstrap snowflake from the [TOR Project](https://www.torproject.org/)
 
 [Snowflake](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/wikis/home) is a pluggable transport that proxies traffic through temporary proxies using WebRTC, a peer-to-peer protocol with built-in NAT punching. It aims to work kind of like flash proxy, but without flash proxy's problems with NAT.
 
