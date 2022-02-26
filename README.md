@@ -14,3 +14,7 @@ bastille bootstrap https://github.com/ddowse/snowflake-template
 ```sh
 bastille template TARGET ddowse/snowflake-template
 ```
+
+## Info
+
+Logfile: `/var/log/snowflakelog`
