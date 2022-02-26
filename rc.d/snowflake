@@ -6,7 +6,7 @@
 
 . /etc/rc.subr
 
-name="snwoflake"
+name="snowflake"
 rcvar="snowflake_enable"
 pidfile="/var/run/${name}.pid"
 logfile="/var/log/${name}.log"
